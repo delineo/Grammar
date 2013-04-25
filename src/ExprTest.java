@@ -1,7 +1,5 @@
 import org.antlr.runtime.*;
 
-import planz.util.parser.expression.*;
-
 public class ExprTest
 {
     /**
