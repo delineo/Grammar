@@ -9,7 +9,7 @@ options
 
 @header
 {
-package planz.util.parser.expression;
+package planz.compiler.expression;
 }
 
 prog:

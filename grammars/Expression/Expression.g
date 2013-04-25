@@ -9,12 +9,14 @@ options
 
 @header
 {
-package planz.util.parser.expression;
+package planz.compiler.expression;
+
+import java.util.HashMap;
 }
 
 @member
 {
-import java.util.HashMap;
+HashMap memory = new HashMap();
 }
 
 // START:stat

@@ -1,5 +1,7 @@
 import org.antlr.runtime.*;
 
+import planz.util.parser.expression.*;
+
 public class ExprTest
 {
     /**
@@ -18,10 +20,10 @@ public class ExprTest
         ExprLexer   lexer  = new ExprLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         ExprParser  parser = new ExprParser(tokens);
-        
-        //ExprParser.prog_return r = parser.prog();
 
         
+        ExprParser.prog_return r = parser.prog();
+
         Token  token = null;
         int    type  = -1;
         String text  = null;
