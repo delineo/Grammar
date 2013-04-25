@@ -1,4 +1,7 @@
 import org.antlr.runtime.*;
+import org.antlr.runtime.tree.*;
+
+import planz.compiler.expression.*;
 
 public class ExprTest
 {
@@ -12,15 +15,24 @@ public class ExprTest
         // TODO Auto-generated method stub
         StringBuilder sbExpr = new StringBuilder();
 
-        sbExpr.append("T=(1+A-(2+3)*B)/C");
+        sbExpr.append("1+3-(2+3)*6");
 
         CharStream  input  = new ANTLRStringStream(sbExpr.toString());
         ExprLexer   lexer  = new ExprLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         ExprParser  parser = new ExprParser(tokens);
 
-        
         ExprParser.prog_return r = parser.prog();
+
+        CommonTree t = (CommonTree)r.getTree(); // get tree from parser
+        // Create a tree node stream from resulting tree
+        CommonTreeNodeStream nodes = new CommonTreeNodeStream(t);
+        Expression walker = new Expression(nodes); // create a tree parser
+        walker.prog();                 // launch at start rule prog
+
+        //Expression  exprs  = new Expression(parser.prog().getTree()); 
+
+        //exprs.prog();
 
         Token  token = null;
         int    type  = -1;
@@ -35,5 +47,6 @@ public class ExprTest
             System.out.println("token : [ " + String.valueOf(type) + " ] : " + text);
         }
         while(type != -1);
+        
     }
 }

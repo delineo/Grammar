@@ -12,6 +12,10 @@ options
 package planz.compiler.expression;
 }
 
+@members
+{
+}
+
 prog:
 (
     stat
@@ -59,9 +63,9 @@ DIV           : '/' ;
 PERCENT       : '%' ;
 ASSIGNMENT    : '=' ;
 
-ID  :   ('a'..'z'|'A'..'Z')+ ;
-INT :   '0'..'9'+ ;
-NEWLINE:'\r'? '\n' ;
-WS  :   (' '|'\t'|'\n'|'\r')+ ;//{skip();} ;
-
+ID     : ('a'..'z'|'A'..'Z')+ ;
+INT    : '0'..'9'+ ;
+NEWLINE: '\r'? '\n' ;
+WS     : (' '|'\t'|'\n'|'\r')+ ;//{skip();} ;
+EOF    : '<EOF>' {$channel=HIDDEN;};
 // END:tokens

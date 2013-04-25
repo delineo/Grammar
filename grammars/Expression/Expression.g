@@ -14,9 +14,9 @@ package planz.compiler.expression;
 import java.util.HashMap;
 }
 
-@member
+@members
 {
-HashMap memory = new HashMap();
+public HashMap memory = new HashMap();
 }
 
 // START:stat

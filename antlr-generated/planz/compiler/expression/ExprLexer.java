@@ -1,4 +1,4 @@
-// $ANTLR 3.4 D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g 2013-04-25 11:53:21
+// $ANTLR 3.4 D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g 2013-04-25 17:14:21
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -41,8 +41,8 @@ public class ExprLexer extends Lexer {
         try {
             int _type = OPEN_PARENS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:52:15: ( '(' )
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:52:17: '('
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:56:15: ( '(' )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:56:17: '('
             {
             match('('); 
 
@@ -62,8 +62,8 @@ public class ExprLexer extends Lexer {
         try {
             int _type = CLOSE_PARENS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:53:15: ( ')' )
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:53:17: ')'
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:57:15: ( ')' )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:57:17: ')'
             {
             match(')'); 
 
@@ -83,8 +83,8 @@ public class ExprLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:55:15: ( '+' )
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:55:17: '+'
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:59:15: ( '+' )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:59:17: '+'
             {
             match('+'); 
 
@@ -104,8 +104,8 @@ public class ExprLexer extends Lexer {
         try {
             int _type = MINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:56:15: ( '-' )
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:56:17: '-'
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:60:15: ( '-' )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:60:17: '-'
             {
             match('-'); 
 
@@ -125,8 +125,8 @@ public class ExprLexer extends Lexer {
         try {
             int _type = STAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:57:15: ( '*' )
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:57:17: '*'
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:61:15: ( '*' )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:61:17: '*'
             {
             match('*'); 
 
@@ -146,8 +146,8 @@ public class ExprLexer extends Lexer {
         try {
             int _type = DIV;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:58:15: ( '/' )
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:58:17: '/'
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:62:15: ( '/' )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:62:17: '/'
             {
             match('/'); 
 
@@ -167,8 +167,8 @@ public class ExprLexer extends Lexer {
         try {
             int _type = PERCENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:59:15: ( '%' )
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:59:17: '%'
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:63:15: ( '%' )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:63:17: '%'
             {
             match('%'); 
 
@@ -188,8 +188,8 @@ public class ExprLexer extends Lexer {
         try {
             int _type = ASSIGNMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:60:15: ( '=' )
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:60:17: '='
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:64:15: ( '=' )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:64:17: '='
             {
             match('='); 
 
@@ -209,10 +209,10 @@ public class ExprLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:62:5: ( ( 'a' .. 'z' | 'A' .. 'Z' )+ )
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:62:9: ( 'a' .. 'z' | 'A' .. 'Z' )+
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:66:8: ( ( 'a' .. 'z' | 'A' .. 'Z' )+ )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:66:10: ( 'a' .. 'z' | 'A' .. 'Z' )+
             {
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:62:9: ( 'a' .. 'z' | 'A' .. 'Z' )+
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:66:10: ( 'a' .. 'z' | 'A' .. 'Z' )+
             int cnt1=0;
             loop1:
             do {
@@ -267,10 +267,10 @@ public class ExprLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:63:5: ( ( '0' .. '9' )+ )
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:63:9: ( '0' .. '9' )+
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:67:8: ( ( '0' .. '9' )+ )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:67:10: ( '0' .. '9' )+
             {
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:63:9: ( '0' .. '9' )+
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:67:10: ( '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
@@ -325,10 +325,10 @@ public class ExprLexer extends Lexer {
         try {
             int _type = NEWLINE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:64:8: ( ( '\\r' )? '\\n' )
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:64:9: ( '\\r' )? '\\n'
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:68:8: ( ( '\\r' )? '\\n' )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:68:10: ( '\\r' )? '\\n'
             {
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:64:9: ( '\\r' )?
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:68:10: ( '\\r' )?
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -337,7 +337,7 @@ public class ExprLexer extends Lexer {
             }
             switch (alt3) {
                 case 1 :
-                    // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:64:9: '\\r'
+                    // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:68:10: '\\r'
                     {
                     match('\r'); 
 
@@ -365,10 +365,10 @@ public class ExprLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:65:5: ( ( ' ' | '\\t' | '\\n' | '\\r' )+ )
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:65:9: ( ' ' | '\\t' | '\\n' | '\\r' )+
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:69:8: ( ( ' ' | '\\t' | '\\n' | '\\r' )+ )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:69:10: ( ' ' | '\\t' | '\\n' | '\\r' )+
             {
-            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:65:9: ( ' ' | '\\t' | '\\n' | '\\r' )+
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:69:10: ( ' ' | '\\t' | '\\n' | '\\r' )+
             int cnt4=0;
             loop4:
             do {
@@ -418,9 +418,34 @@ public class ExprLexer extends Lexer {
     }
     // $ANTLR end "WS"
 
+    // $ANTLR start "EOF"
+    public final void mEOF() throws RecognitionException {
+        try {
+            int _type = EOF;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:70:8: ( '<EOF>' )
+            // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:70:10: '<EOF>'
+            {
+            match("<EOF>"); 
+
+
+
+            _channel=HIDDEN;
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "EOF"
+
     public void mTokens() throws RecognitionException {
-        // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:1:8: ( OPEN_PARENS | CLOSE_PARENS | PLUS | MINUS | STAR | DIV | PERCENT | ASSIGNMENT | ID | INT | NEWLINE | WS )
-        int alt5=12;
+        // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:1:8: ( OPEN_PARENS | CLOSE_PARENS | PLUS | MINUS | STAR | DIV | PERCENT | ASSIGNMENT | ID | INT | NEWLINE | WS | EOF )
+        int alt5=13;
         switch ( input.LA(1) ) {
         case '(':
             {
@@ -569,6 +594,11 @@ public class ExprLexer extends Lexer {
             alt5=12;
             }
             break;
+        case '<':
+            {
+            alt5=13;
+            }
+            break;
         default:
             NoViableAltException nvae =
                 new NoViableAltException("", 5, 0, input);
@@ -670,6 +700,14 @@ public class ExprLexer extends Lexer {
                 // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:1:89: WS
                 {
                 mWS(); 
+
+
+                }
+                break;
+            case 13 :
+                // D:\\Eclipse3.7\\workspace\\ISQL Grammar\\grammars\\Expression\\Expr.g:1:92: EOF
+                {
+                match(EOF); 
 
 
                 }
